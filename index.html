@@ -68,88 +68,6 @@
             opacity: 0.8;
         }
 
-        /* Login Page Styles */
-        .login-container {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            min-height: 100vh;
-            padding: 80px 20px 20px;
-        }
-
-        .login-form {
-            background: rgba(255, 255, 255, 0.95);
-            padding: 3rem;
-            border-radius: 20px;
-            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.1);
-            width: 100%;
-            max-width: 400px;
-            backdrop-filter: blur(10px);
-        }
-
-        .login-form h2 {
-            text-align: center;
-            margin-bottom: 2rem;
-            color: #333;
-            font-size: 2rem;
-        }
-
-        .form-group {
-            margin-bottom: 1.5rem;
-        }
-
-        .form-group label {
-            display: block;
-            margin-bottom: 0.5rem;
-            color: #555;
-            font-weight: 500;
-        }
-
-        .form-group input {
-            width: 100%;
-            padding: 1rem;
-            border: 2px solid #e1e1e1;
-            border-radius: 10px;
-            font-size: 1rem;
-            transition: border-color 0.3s ease;
-            background: #f8f9fa;
-        }
-
-        .form-group input:focus {
-            outline: none;
-            border-color: #667eea;
-            background: white;
-        }
-
-        .btn {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            color: white;
-            border: none;
-            padding: 1rem 2rem;
-            border-radius: 10px;
-            font-size: 1rem;
-            cursor: pointer;
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-            width: 100%;
-            font-weight: 600;
-        }
-
-        .btn:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 10px 30px rgba(102, 126, 234, 0.4);
-        }
-
-        .login-footer {
-            text-align: center;
-            margin-top: 2rem;
-            color: #666;
-        }
-
-        .login-footer a {
-            color: #667eea;
-            text-decoration: none;
-        }
-
         /* Home Page Styles */
         .home-container {
             padding: 120px 0 60px;
@@ -239,14 +157,6 @@
             font-size: 1.5rem;
         }
 
-        /* Page switcher */
-        .page {
-            display: none;
-        }
-
-        .page.active {
-            display: block;
-        }
 
         /* Responsive */
         @media (max-width: 768px) {
@@ -260,10 +170,6 @@
 
             .nav-links {
                 display: none;
-            }
-
-            .login-form {
-                padding: 2rem;
             }
         }
     </style>
@@ -281,27 +187,6 @@
             </ul>
         </div>
     </nav>
-
-    <!-- Login Page -->
-    <div id="login" class="page">
-        <div class="login-container">
-            <form class="login-form">
-                <h2>Welcome Back</h2>
-                <div class="form-group">
-                    <label for="email">Email Address</label>
-                    <input type="email" id="email" name="email" required>
-                </div>
-                <div class="form-group">
-                    <label for="password">Password</label>
-                    <input type="password" id="password" name="password" required>
-                </div>
-                <button type="submit" class="btn">Sign In</button>
-                <div class="login-footer">
-                    <p>Don't have an account? <a href="#">Sign up here</a></p>
-                </div>
-            </form>
-        </div>
-    </div>
 
     <!-- Home Page -->
     <div id="home" class="page active">
